@@ -1,0 +1,72 @@
+/* Navigation.css */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+    display: flex;
+  
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: hsl(213, 87%, 53%);
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+  }
+  
+  .logo {
+    flex: 1; /* Take up available space */
+  }
+  
+  .nav-pages {
+    flex: 2; /* Take up more space */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-pages a {
+    margin: 0 1rem;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .book-tour {
+    flex: 1; /* Take up available space */
+    text-align: right;
+  }
+
+  /* Navbar.css */
+
+.book-tour button {
+  background-color: orange;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-tour button:hover {
+  background-color: blue;
+}
+
+  
+  /* Media query for small screens */
+  @media (max-width: 768px) {
+    .nav-pages {
+      display: none; /* Hide navigation links */
+    }
+    
+    .logo, .book-tour {
+      flex: 1; /* Take up available space */
+      text-align: center; /* Center-align logo and book tour button */
+    }
+  }
+  

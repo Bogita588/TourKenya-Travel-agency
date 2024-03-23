@@ -1,0 +1,75 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 50px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  font-family: "Tauri", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: hsl(220, 80%, 16%);
+}
+
+.cta-button,
+.flight-search-form button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #f39c12;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.8s ease-out;
+}
+
+.cta-button:hover,
+.flight-search-form button:hover {
+  background-color: #3498db;
+}
+
+.flight-search-form input[type="text"],
+.flight-search-form input[type="date"],
+.flight-search-form input[type="number"] {
+  width: calc(50% - 10px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.hero-form{
+  background-color: rgb(99, 144, 196);
+  border-radius: 30px;
+}
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+}
